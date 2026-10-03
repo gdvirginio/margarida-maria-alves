@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Memorial e biografia histórica de Margarida Maria Alves (1933–1983). História de vida, atuação sindical e direitos trabalhistas conquistados.">
+    <title>Margarida Maria Alves — Biografia e Memorial</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="#conteudo" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- Cabeçalho -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="site-title">
+                    Margarida Maria Alves
+                    <span class="site-subtitle">Memorial Histórico (1933–1983)</span>
+                </a>
+
+                <nav class="desktop-nav">
+                    <a href="index.html" class="active">Biografia</a>
+                    <a href="routes/carteira_assinada.html">Direitos do Sindicato</a>
+                    <a href="#acervo">Acervo Fotográfico</a>
+                    <a href="#cronologia">Cronologia</a>
+                    <a href="#fontes">Fontes</a>
+                </nav>
+
+                <button class="nav-toggle-btn" id="open-menu-btn" aria-label="Abrir menu de navegação">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <span>Menu</span>
+                </button>
+            </div>
+        </div>
+        <!-- Sub-Barra Horizontal de Acesso Rápido aos Direitos -->
+        <nav class="rights-subnav-bar" aria-label="Acesso aos Direitos Sindicais">
+            <div class="container">
+                <div class="rights-scroll-wrapper">
+                    <a href="index.html" class="rights-tab-link active">Biografia (Home)</a>
+                    <a href="routes/carteira_assinada.html" class="rights-tab-link">Carteira Assinada</a>
+                    <a href="routes/jornada_8_horas.html" class="rights-tab-link">Jornada de 8h</a>
+                    <a href="routes/decimo_terceiro.html" class="rights-tab-link">13º Salário</a>
+                    <a href="routes/ferias_remuneradas.html" class="rights-tab-link">Férias Remuneradas</a>
+                    <a href="routes/repouso_semanal.html" class="rights-tab-link">Repouso Semanal</a>
+                    <a href="routes/licenca_maternidade.html" class="rights-tab-link">Maternidade e Previdência</a>
+                    <a href="routes/trabalho_infantil.html" class="rights-tab-link">Fim Trabalho Infantil</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Drawer Mobile -->
+    <div class="mobile-backdrop" id="drawer-backdrop"></div>
+    <aside class="mobile-drawer" id="mobile-drawer" aria-label="Menu móvel">
+        <div class="drawer-header">
+            <span class="drawer-title">Navegação</span>
+            <button class="drawer-close" id="close-menu-btn" aria-label="Fechar menu">&times;</button>
+        </div>
+
+        <ul class="drawer-nav-list">
+            <li><a href="index.html" class="active">Biografia (Início)</a></li>
+            <li><a href="#acervo" onclick="closeDrawer()">Acervo Fotográfico</a></li>
+            <li><a href="#cronologia" onclick="closeDrawer()">Cronologia dos Fatos</a></li>
+            <li><a href="#fontes" onclick="closeDrawer()">Fontes e Referências</a></li>
+        </ul>
+
+        <div class="drawer-section-label">Direitos Conquistados</div>
+        <ul class="drawer-nav-list">
+            <li><a href="routes/carteira_assinada.html">1. Carteira de Trabalho Assinada</a></li>
+            <li><a href="routes/jornada_8_horas.html">2. Jornada de 8 Horas Diárias</a></li>
+            <li><a href="routes/decimo_terceiro.html">3. 13º Salário no Campo</a></li>
+            <li><a href="routes/ferias_remuneradas.html">4. Férias Remuneradas</a></li>
+            <li><a href="routes/repouso_semanal.html">5. Repouso Semanal Remunerado</a></li>
+            <li><a href="routes/licenca_maternidade.html">6. Licença-Maternidade e Previdência</a></li>
+            <li><a href="routes/trabalho_infantil.html">7. Fim do Trabalho Infantil</a></li>
+        </ul>
+    </aside>
+
+    <main id="conteudo">
+
+        <!-- Seção Hero / Abertura -->
+        <section class="hero-block">
+            <div class="container">
+                <div class="hero-glass-card">
+                    <div class="hero-split">
+                        <div>
+                            <h1 class="hero-title">Margarida Maria Alves</h1>
+                            <p class="hero-description">
+                                Líder sindical camponesa, primeira mulher a presidir o Sindicato dos Trabalhadores Rurais de Alagoa Grande e figura homenageada no Livro dos Heróis e Heroínas da Pátria.
+                            </p>
+
+                            <div class="quote-panel">
+                                <blockquote>
+                                    "Da luta eu não fujo. É melhor morrer na luta do que morrer de fome."
+                                </blockquote>
+                                <cite>Pronunciamento público em 1º de maio de 1983, Alagoa Grande (PB)</cite>
+                            </div>
+                        </div>
+
+                        <figure class="hero-figure">
+                            <img src="assets/margarida_acervo.jpg" alt="Fotografia de Margarida Maria Alves sorrindo com blusa estampada">
+                            <figcaption class="figure-caption">
+                                <strong>Margarida Maria Alves (1933–1983).</strong> Fotografia de arquivo preservada pelo Centro de Memória e Memória Feminista Antirracista.
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Origens e Raízes -->
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-heading">Raízes no Brejo Paraibano e a Consciência de Classe</h2>
+                
+                <div class="two-columns-layout">
+                    <div>
+                        <p class="lead">
+                            Nascida em 5 de agosto de 1933 em Alagoa Grande (PB), Margarida era filha de Manoel Lourenço Alves (origem indígena) e Alexandrina Inácia da Conceição (mulher negra). Caçula de nove irmãos, começou na lida da terra aos oito anos sob o regime servil de cambão.
+                        </p>
+                        <p>
+                            Aos 22 anos, sua família foi expulsa do Sítio Jacu pelo latifundiário João Senhor. Margarida reagiu ingressando com sua primeira ação na Justiça do Trabalho, iniciando sua trajetória de enfrentamento ao coronelismo no Brejo Paraibano.
+                        </p>
+                    </div>
+
+                    <div>
+                        <figure class="editorial-figure interactive-figure" data-lightbox="true" data-title="Registro Oficial da Comissão Nacional da Verdade (CNV)" data-desc="Retrato de arquivo de Margarida Maria Alves preservado no Volume III do relatório federal sobre mortos e desaparecidos políticos." data-credit="Comissão Nacional da Verdade (CNV) / Arquivo Nacional">
+                            <img src="assets/margarida_alves_retrato.png" alt="Retrato oficial de Margarida Maria Alves recuperado no relatório da Comissão Nacional da Verdade">
+                            <figcaption class="figure-caption">
+                                <strong>Registro Oficial da Comissão Nacional da Verdade (CNV).</strong> Retrato arquivado no Volume III do relatório sobre violações da ditadura militar.
+                                <span class="figure-expand-hint">Clique para ampliar a fotografia</span>
+                            </figcaption>
+                        </figure>
+
+                        <div class="bio-data-card">
+                            <h3>Ficha Documental</h3>
+                            <ul class="bio-data-list">
+                                <li>
+                                    <strong>Nascimento</strong>
+                                    <span>Alagoa Grande, Paraíba (05/08/1933)</span>
+                                </li>
+                                <li>
+                                    <strong>Família</strong>
+                                    <span>Esposa de Severino Casimiro Alves e mãe de José de Arimatéia Alves</span>
+                                </li>
+                                <li>
+                                    <strong>Escolaridade</strong>
+                                    <span>Conclusão da 4ª série fundamental já na fase adulta</span>
+                                </li>
+                                <li>
+                                    <strong>Articulação Comunitária</strong>
+                                    <span>Comissão Pastoral da Terra (CPT) e Arquidiocese de Dom José Maria Pires</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Presidência do Sindicato e Links para as Páginas dos Direitos -->
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-heading">A Presidência do Sindicato e o Enfrentamento aos Usineiros</h2>
+                <p>
+                    Eleita presidente do Sindicato dos Trabalhadores Rurais de Alagoa Grande em 1973, sob a ditadura militar (AI-5), Margarida foi a primeira mulher a liderar um sindicato na Paraíba, exercendo o mandato por doze anos.
+                </p>
+
+                <figure class="editorial-figure interactive-figure" data-lightbox="true" data-title="Comício em Alagoa Grande" data-desc="Margarida Maria Alves discursa na carroceria de um caminhão para trabalhadores rurais em defesa das ações judiciais e dos direitos trabalhistas dos canavieiros." data-credit="Reprodução / De Olho nos Ruralistas">
+                    <img src="assets/margarida_discurso.jpg" alt="Margarida Maria Alves discursando na carroceria de um caminhão para trabalhadores rurais reunidos em Alagoa Grande">
+                    <figcaption class="figure-caption">
+                        <strong>Comício em Alagoa Grande (década de 1980).</strong> Margarida discursa sobre a carroceria de um caminhão em defesa das ações judiciais e dos direitos trabalhistas dos canavieiros. À esquerda, participam lideranças sindicais da época. (Foto: Reprodução / De Olho nos Ruralistas).
+                        <span class="figure-expand-hint">Clique para ampliar a fotografia</span>
+                    </figcaption>
+                </figure>
+
+                <p>
+                    Enfrentou diretamente o complexo da <strong>Usina Tanques</strong>, de Aguinaldo Veloso Borges e Zito Buarque, com mais de 70 ações trabalhistas ativas em 1983. Em 1980, cofundou o <strong>CENTRU</strong> com Manuel da Conceição, levando a alfabetização popular de Paulo Freire para o campo.
+                </p>
+
+                <!-- Portal de Acesso aos Direitos -->
+                <h3 style="font-size: 1.5rem; margin: 2rem 0 0.5rem; color: var(--color-brand-dark);">Direitos Conquistados</h3>
+                <p style="margin-bottom: 1.25rem;">Conheça o impacto, as ações judiciais e a realidade documental de cada conquista dos trabalhadores rurais:</p>
+
+                <div class="rights-portal-grid">
+                    <a href="routes/carteira_assinada.html" class="right-portal-card">
+                        <h3>Carteira Assinada</h3>
+                        <p>O registro formal da relação de trabalho e o encerramento do regime servil de cambão.</p>
+                        <span class="card-action">Ler explicação detalhada &rarr;</span>
+                    </a>
+
+                    <a href="routes/jornada_8_horas.html" class="right-portal-card">
+                        <h3>Jornada de 8 Horas</h3>
+                        <p>O combate às rotinas de 12 a 14 horas de sol a sol e o tempo para a educação popular.</p>
+                        <span class="card-action">Ler explicação detalhada &rarr;</span>
+                    </a>
+
+                    <a href="routes/decimo_terceiro.html" class="right-portal-card">
+                        <h3>13º Salário</h3>
+                        <p>A extensão da gratificação natalina e a superação das dívidas com os barracões das usinas.</p>
+                        <span class="card-action">Ler explicação detalhada &rarr;</span>
+                    </a>
+
+                    <a href="routes/ferias_remuneradas.html" class="right-portal-card">
+                        <h3>Férias Remuneradas</h3>
+                        <p>A garantia do descanso anual remunerado de 30 dias contra o descarte salarial na entressafra.</p>
+                        <span class="card-action">Ler explicação detalhada &rarr;</span>
+                    </a>
+
+                    <a href="routes/repouso_semanal.html" class="right-portal-card">
+                        <h3>Repouso Semanal</h3>
+                        <p>O descanso de 24 horas consecutivas contra o regime de moagem contínua de domingo a domingo.</p>
+                        <span class="card-action">Ler explicação detalhada &rarr;</span>
+                    </a>
+
+                    <a href="routes/licenca_maternidade.html" class="right-portal-card">
+                        <h3>Maternidade e Previdência</h3>
+                        <p>A sindicalização autônoma da trabalhadora rural e o acesso a licença-maternidade e aposentadoria.</p>
+                        <span class="card-action">Ler explicação detalhada &rarr;</span>
+                    </a>
+
+                    <a href="routes/trabalho_infantil.html" class="right-portal-card">
+                        <h3>Fim do Trabalho Infantil</h3>
+                        <p>A retirada de menores das frentes de corte e a garantia de vagas escolares com o CENTRU.</p>
+                        <span class="card-action">Ler explicação detalhada &rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- O Crime e o Dossiê Internacional -->
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-heading">O Assassinato em 12 de Agosto de 1983 e o Julgamento da OEA</h2>
+                
+                <div class="two-columns-layout">
+                    <div>
+                        <p>
+                            A firmeza do sindicato contrariou o <strong>"Grupo da Várzea"</strong>, consórcio criminoso que reunia mais de 60 latifundiários, políticos e policiais da região. Em 12 de agosto de 1983, aos 50 anos, Margarida foi assassinada na porta de sua casa com um tiro de escopeta calibre 12 no rosto, disparado pelo pistoleiro e soldado PM Betâneo Carneiro dos Santos, na presença de seu filho de 8 anos.
+                        </p>
+                        <p>
+                            O processo arrastou-se por quase duas décadas e os mandantes da Usina Tanques nunca cumpriram pena no Brasil. Em 2020, a Comissão Interamericana de Direitos Humanos (CIDH/OEA) aprovou o Relatório nº 31/20, condenando o Estado brasileiro por negligência investigativa e cumplicidade com a violência latifundiária.
+                        </p>
+
+                        <div class="dossier-box">
+                            <h3>Dossiê e Reparação</h3>
+                            <ul>
+                                <li><strong>Mandantes denunciados:</strong> Aguinaldo Veloso Borges e seu genro José Buarque de Gusmão Neto (Zito Buarque), da Usina Tanques.</li>
+                                <li><strong>Condenação na OEA (2020):</strong> Relatório nº 31/20 da CIDH reconheceu a responsabilidade do Brasil por impunidade e violação de direitos humanos.</li>
+                                <li><strong>Anistia Política (2019):</strong> O Estado brasileiro declarou Margarida anistiada política póstuma, reparando seu filho José de Arimatéia.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <figure class="editorial-figure">
+                            <img src="assets/museu_casa_margarida.jpg" alt="Interior do Museu Casa Margarida Maria Alves em Alagoa Grande com a frase Da Luta Não Fujo pintada na parede">
+                            <figcaption class="figure-caption">
+                                <strong>Museu Casa Margarida Maria Alves.</strong> A casa onde viveu e foi assassinada, na Rua Olinda em Alagoa Grande (PB), hoje preserva sua memória e o lema "DA LUTA NÃO FUJO". (Foto: Museu Casa Margarida Alves).
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- A Marcha das Margaridas -->
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-heading">A Marcha das Margaridas e os 13 Eixos Temáticos</h2>
+                
+                <figure class="editorial-figure interactive-figure" data-lightbox="true" data-title="Marcha das Margaridas na Esplanada dos Ministérios" data-desc="Mais de 100 mil trabalhadoras rurais, quilombolas e indígenas mobilizadas em Brasília em defesa da soberania alimentar e dos direitos das mulheres." data-credit="CONTAG / Agência Brasil">
+                    <img src="assets/marcha_das_margaridas.jpg" alt="Multidão de mulheres trabalhadoras rurais marchando com faixas e chapéus na Esplanada dos Ministérios em Brasília">
+                    <figcaption class="figure-caption">
+                        <strong>Marcha das Margaridas na Esplanada dos Ministérios.</strong> Mais de 100 mil trabalhadoras rurais, quilombolas e indígenas mobilizadas em Brasília. (Foto: CONTAG / Agência Brasil).
+                        <span class="figure-expand-hint">Clique para ampliar a fotografia</span>
+                    </figcaption>
+                </figure>
+
+                <p>
+                    Criada no ano 2000 pela CONTAG e movimentos camponeses, a <strong>Marcha das Margaridas</strong> é a maior mobilização de mulheres trabalhadoras da América Latina, reunindo a cada quatro anos mais de 100 mil camponesas em Brasília. Em 2023, Margarida foi inscrita no <strong>Livro dos Heróis e Heroínas da Pátria</strong>. Os 13 eixos que orientam o movimento são:
+                </p>
+
+                <ol class="eixos-list">
+                    <li>Defesa da democracia participativa e da soberania popular no Brasil.</li>
+                    <li>Ampliação do poder e da participação política das mulheres em espaços de decisão.</li>
+                    <li>Exigência de uma vida livre de todas as formas de violência, sem racismo e sem sexismo.</li>
+                    <li>Garantia da autonomia e liberdade das mulheres sobre os seus próprios corpos e sua sexualidade.</li>
+                    <li>Proteção irrestrita da Natureza, pautada na justiça ambiental e climática contra a degradação.</li>
+                    <li>Respeito à autodeterminação dos povos, assegurando soberania alimentar, hídrica e energética.</li>
+                    <li>Democratização real do acesso à terra (reforma agrária) e garantia dos direitos territoriais e dos maretórios.</li>
+                    <li>Garantia do direito de acesso, uso da biodiversidade e a defesa intransigente dos bens comuns.</li>
+                    <li>Promoção de uma vida saudável alicerçada na agroecologia e na segurança alimentar e nutricional.</li>
+                    <li>Fortalecimento da autonomia econômica das mulheres, com inclusão produtiva justa, trabalho digno e renda.</li>
+                    <li>Manutenção e ampliação de uma Saúde, Previdência e Assistência Social públicas, universais e solidárias.</li>
+                    <li>Defesa de uma Educação Pública, não sexista e antirracista, assegurando o pleno direito à educação do e no campo.</li>
+                    <li>Universalização imediata do acesso à internet e promoção da inclusão digital para comunidades rurais.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Acervo Fotográfico Histórico -->
+        <section class="content-section" id="acervo">
+            <div class="container">
+                <h2 class="section-heading">Acervo de Fotografias Históricas</h2>
+                <p>Registros fotográficos autênticos preservados por arquivos públicos e memoriais populares:</p>
+
+                <div class="gallery-grid">
+                    <article class="gallery-card">
+                        <img src="assets/margarida_acervo.jpg" alt="Retrato a cores de Margarida Alves" onclick="abrirLightbox(this.src, 'Margarida Maria Alves', 'Retrato a cores preservado em arquivos de memória popular.', 'Acervo Memória Feminista')">
+                        <div class="gallery-card-content">
+                            <h4>Retrato Histórico</h4>
+                            <p>Registro a cores preservado pela memória feminista e dos movimentos camponeses.</p>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card">
+                        <img src="assets/margarida_discurso.jpg" alt="Margarida Alves em comício em Alagoa Grande" onclick="abrirLightbox(this.src, 'Discurso em Alagoa Grande', 'Margarida discursa na carroceria de um caminhão perante trabalhadores rurais no Brejo Paraibano.', 'Foto: Reprodução / De Olho nos Ruralistas')">
+                        <div class="gallery-card-content">
+                            <h4>Comício dos Trabalhadores</h4>
+                            <p>Margarida discursando sobre caminhão perante centenas de lavradores nos anos 1980.</p>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card">
+                        <img src="assets/museu_casa_margarida.jpg" alt="Interior do Museu Casa Margarida Alves" onclick="abrirLightbox(this.src, 'Museu Casa Margarida Alves', 'Interior preservado da casa onde morou e foi assassinada, em Alagoa Grande (PB).', 'Foto: Museu Casa Margarida Alves')">
+                        <div class="gallery-card-content">
+                            <h4>Museu Casa em Alagoa Grande</h4>
+                            <p>Residência oficial transformada em centro de memória na Rua Olinda.</p>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card">
+                        <img src="assets/marcha_das_margaridas.jpg" alt="Multidão na Marcha das Margaridas" onclick="abrirLightbox(this.src, 'Marcha das Margaridas em Brasília', 'Mais de 100 mil trabalhadoras rurais na Esplanada dos Ministérios.', 'Foto: CONTAG / Agência Brasil')">
+                        <div class="gallery-card-content">
+                            <h4>Marcha das Margaridas</h4>
+                            <p>Mais de 100 mil trabalhadoras rurais mobilizadas na Esplanada dos Ministérios em Brasília.</p>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card">
+                        <img src="assets/margarida_alves_retrato.png" alt="Retrato da Comissão Nacional da Verdade" onclick="abrirLightbox(this.src, 'Documento da Comissão da Verdade', 'Retrato original constante do Relatório Final da CNV (Volume III).', 'Fonte: CNV / Arquivo Nacional')">
+                        <div class="gallery-card-content">
+                            <h4>Comissão Nacional da Verdade</h4>
+                            <p>Retrato documentado no relatório oficial sobre os mortos e perseguidos pela ditadura militar.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Linha do Tempo Animada -->
+        <section class="content-section" id="cronologia">
+            <div class="container">
+                <h2 class="section-heading">Cronologia Histórica (1933–2023)</h2>
+                <p>Acompanhe os fatos marcantes. A barra lateral preenche dinamicamente conforme você rola a página:</p>
+
+                <div class="timeline-wrapper">
+                    <div class="timeline-track"></div>
+                    <div class="timeline-fill-line"></div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content-card">
+                            <span class="timeline-year">1933</span>
+                            <h4>Nascimento no Brejo Paraibano</h4>
+                            <p>Nasce em 5 de agosto, em Alagoa Grande, filha caçula de camponeses lavradores.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content-card">
+                            <span class="timeline-year">1955</span>
+                            <h4>Expulsão do Sítio Jacu</h4>
+                            <p>Expropriada pelo fazendeiro João Senhor. Margarida ingressa com sua primeira ação na Justiça do Trabalho.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content-card">
+                            <span class="timeline-year">1973</span>
+                            <h4>Presidência do Sindicato Rural</h4>
+                            <p>Primeira mulher eleita presidente do Sindicato dos Trabalhadores Rurais de Alagoa Grande sob o AI-5.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content-card">
+                            <span class="timeline-year">1980</span>
+                            <h4>Fundação do CENTRU</h4>
+                            <p>Co-funda com Manuel da Conceição o Centro de Educação e Cultura do Trabalhador Rural com metodologia de Paulo Freire.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content-card">
+                            <span class="timeline-year">1983</span>
+                            <h4>Discurso de 1º de Maio e Martírio</h4>
+                            <p>Em 1º de maio profere a frase histórica. Em 12 de agosto é assassinada na porta de casa com um tiro de escopeta 12 no rosto.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content-card">
+                            <span class="timeline-year">1988</span>
+                            <h4>Prêmio Pax Christi Internacional</h4>
+                            <p>Reconhecimento póstumo outorgado internacionalmente pela dedicação inegociável aos Direitos Humanos.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content-card">
+                            <span class="timeline-year">1994</span>
+                            <h4>Fundação Margarida Alves</h4>
+                            <p>Oficializada em João Pessoa por Dom José Maria Pires para formação de juristas populares.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content-card">
+                            <span class="timeline-year">2000</span>
+                            <h4>1ª Marcha das Margaridas e Denúncia na OEA</h4>
+                            <p>Primeira edição da marcha em Brasília e formalização da petição internacional na Comissão Interamericana de Direitos Humanos.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content-card">
+                            <span class="timeline-year">2012</span>
+                            <h4>Lei Federal nº 12.641</h4>
+                            <p>Instituição oficial do dia 12 de agosto como o Dia Nacional dos Direitos Humanos no calendário da República.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content-card">
+                            <span class="timeline-year">2019</span>
+                            <h4>Anistia Política Post-Mortem</h4>
+                            <p>O Estado brasileiro reconhece a responsabilidade pelas perseguições e indeniza o filho José de Arimatéia.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content-card">
+                            <span class="timeline-year">2020</span>
+                            <h4>Condenação Internacional do Brasil</h4>
+                            <p>A CIDH/OEA aprova o Relatório 31/20, condenando o Brasil por negligência investigativa e impunidade do latifúndio.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content-card">
+                            <span class="timeline-year">2023</span>
+                            <h4>Livro dos Heróis e Heroínas da Pátria</h4>
+                            <p>Inscrição solene no Panteão da Pátria e da Liberdade, em Brasília, durante a 7ª Marcha das Margaridas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fontes e Referências Documentais (Ao Final) -->
+        <section class="sources-section" id="fontes">
+            <div class="container">
+                <h2 class="sources-title">Fontes e Referências Documentais</h2>
+                
+                <ol class="sources-list">
+                    <li>
+                        <strong>Brasil de Fato:</strong> <em>Margarida Alves, líder sindical e camponesa, completaria 92 anos</em> (2025).
+                    </li>
+                    <li>
+                        <strong>Memória Feminista Antirracista:</strong> <em>Margarida Maria Alves (1933–1983)</em>. Registro biográfico, iconográfico e histórico de lideranças camponesas.
+                    </li>
+                    <li>
+                        <strong>De Olho nos Ruralistas:</strong> <em>De Olho na História (I) — Margarida Maria Alves: "Da luta não fujo"</em> (2019). Dossiê investigativo sobre o assassinato na Paraíba.
+                    </li>
+                    <li>
+                        <strong>Comissão Nacional da Verdade (CNV):</strong> <em>Relatório Final da CNV, Volume III (Mortos e Desaparecidos Políticos)</em>. Presidência da República, Brasília, 2014.
+                    </li>
+                    <li>
+                        <strong>Comissão Interamericana de Direitos Humanos (CIDH/OEA):</strong> <em>Relatório de Mérito nº 31/20 (Caso 12.332 — Margarida Maria Alves e Familiares vs. Brasil)</em>, aprovado em abril de 2020.
+                    </li>
+                    <li>
+                        <strong>Comissão Camponesa da Verdade:</strong> <em>Relatório Final sobre Graves Violações de Direitos Humanos no Campo durante a Ditadura Militar</em>. DHnet, 2016.
+                    </li>
+                    <li>
+                        <strong>Editora da UFPB:</strong> ROMÃO, Ana Paula de Souza Ferreira. <em>Margarida, Margaridas: Memória de Margarida Maria Alves (1933–1983) através das Práticas Educativas das Margaridas</em>. João Pessoa, 2017.
+                    </li>
+                    <li>
+                        <strong>Fundação de Defesa dos Direitos Humanos Margarida Maria Alves (FDDHMMA):</strong> Acervo documental e memória institucional. João Pessoa (PB), 1994–2023.
+                    </li>
+                    <li>
+                        <strong>G1 Paraíba / Grupo Globo:</strong> <em>Assassinato de Margarida Maria Alves completa 40 anos: quem é a líder sindical que lutou por trabalhadores do campo</em> (Agosto de 2023).
+                    </li>
+                    <li>
+                        <strong>LEHMT / UFRJ:</strong> <em>Lutas pela terra durante a ditadura civil-militar no Brasil</em>. Laboratório de Estudos de História do Mundo do Trabalho, 2022.
+                    </li>
+                    <li>
+                        <strong>Jubileu Sul Brasil:</strong> <em>"Medo nós tem, mas não usa": A resistência de Margarida Alves segue necessária no Brasil de 2021</em>.
+                    </li>
+                    <li>
+                        <strong>CONTAG / FETAG-PB:</strong> <em>Marcha das Margaridas — Caderno de Deliberações e Eixos Temáticos da 7ª Marcha</em> (Brasília, 2023).
+                    </li>
+                    <li>
+                        <strong>Documentário Cinematográfico:</strong> BARROSO, Claudio. <em>Margarida Sempre Viva</em>. Filme em película Super-8, Paraíba, 1983. Preservado no acervo da Cinemateca Brasileira.
+                    </li>
+                    <li>
+                        <strong>Audiovisual CONTAG:</strong> <em>Nos Caminhos de Margarida</em> (Vídeo Documentário, 2017). Entrevistas com trabalhadoras rurais do Brejo Paraibano.
+                    </li>
+                    <li>
+                        <strong>Legislação Federal:</strong> Lei Federal nº 12.641, de 18 de junho de 2012. Institui o dia 12 de agosto como o Dia Nacional dos Direitos Humanos. Diário Oficial da União.
+                    </li>
+                    <li>
+                        <strong>Legislação Federal:</strong> Lei Federal nº 14.654, de 23 de agosto de 2023. Inscreve Margarida Maria Alves no Livro dos Heróis e Heroínas da Pátria. Diário Oficial da União.
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="site-footer">
+        <div class="container">
+            <h3>Memorial Margarida Maria Alves</h3>
+            <p>
+                Dossiê histórico e memorial educativo dedicado à preservação da memória da líder camponesa, defensora dos direitos fundamentais dos trabalhadores rurais e Heroína da Pátria Brasileira.
+            </p>
+            <p>
+                12 de Agosto — Dia Nacional dos Direitos Humanos (Lei Federal nº 12.641/2012).
+            </p>
+            <div class="footer-credits">
+                Projeto educativo desenvolvido por estudantes da <a href="https://www.google.com/maps/search/?api=1&query=Etec+Dra.+Ruth+Cardoso+S%C3%A3o+Vicente+SP" target="_blank" rel="noopener noreferrer" class="school-map-link"><strong>Etec Dra. Ruth Cardoso</strong></a> para preservação da memória histórica e cidadã.
+            </div>
+            <div class="footer-copyright">
+                Publicação desenvolvida para fins de difusão histórica e pedagógica. Informações consolidadas a partir do dossiê de pesquisa histórica e documental.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Lightbox para Fotos Reais -->
+    <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="lightbox-dialog">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Fechar modal">&times;</button>
+            <img src="" alt="" id="lightbox-img">
+            <div class="lightbox-caption">
+                <h4 id="lightbox-title">Título</h4>
+                <p id="lightbox-desc">Descrição</p>
+                <small id="lightbox-credit">Fonte</small>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
